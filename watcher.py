@@ -6,7 +6,7 @@ from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
 def get_database():
     # MongoDB connection string
-    CONNECTION_STRING = "your-coonection-string"
+    CONNECTION_STRING = "your-connection-string"
     client = MongoClient(CONNECTION_STRING)
     return client['your-database']
 
