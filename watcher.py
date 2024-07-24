@@ -46,9 +46,7 @@ def watch_and_execute():
                     })
                     print(f"Result stored with ID: {result_id}")
                     
-                    # Fetch blockchain block count
-                    block_count = rpc_connection.getblockcount()
-                    print(block_count)
+
                 except Exception as e:
                     print(f"An error occurred: {e}")
                     results_collection.insert_one({
